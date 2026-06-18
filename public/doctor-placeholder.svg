@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none" role="img" aria-label="Doctor placeholder illustration">
+  <rect width="400" height="500" fill="#E8F4FB"/>
+  <circle cx="200" cy="160" r="72" fill="#0B6EAA" opacity="0.15"/>
+  <circle cx="200" cy="145" r="52" fill="#0D9488" opacity="0.35"/>
+  <path d="M95 420c0-58 47-105 105-105s105 47 105 105" fill="#0B6EAA" opacity="0.2"/>
+  <rect x="120" y="300" width="160" height="140" rx="24" fill="#fff" stroke="#CBD5E1" stroke-width="2"/>
+  <path d="M155 340h90M155 370h70M155 400h50" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="320" cy="120" r="28" fill="#0D9488" opacity="0.12"/>
+  <circle cx="80" cy="220" r="20" fill="#0B6EAA" opacity="0.1"/>
+</svg>

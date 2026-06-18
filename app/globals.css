@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --medical-blue: #0b6eaa;
+  --medical-blue-dark: #085a8a;
+  --medical-blue-light: #e8f4fb;
+  --medical-teal: #0d9488;
+  --medical-teal-dark: #0b7a70;
+  --medical-teal-light: #e6f7f5;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-medical-blue: var(--medical-blue);
+  --color-medical-blue-dark: var(--medical-blue-dark);
+  --color-medical-blue-light: var(--medical-blue-light);
+  --color-medical-teal: var(--medical-teal);
+  --color-medical-teal-dark: var(--medical-teal-dark);
+  --color-medical-teal-light: var(--medical-teal-light);
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--medical-teal) 25%, white);
+}
