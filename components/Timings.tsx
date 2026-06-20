@@ -4,7 +4,7 @@ import { ClockIcon } from "@/components/icons";
 
 export function Timings() {
   return (
-    <section id="timings" className="bg-medical-teal-light/50 py-16 sm:py-20">
+    <section id="timings" className="bg-medical-teal-light/50 py-10 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Clinic Hours"
@@ -13,7 +13,7 @@ export function Timings() {
           align="center"
         />
 
-        <div className="mx-auto mt-12 max-w-3xl">
+        <div className="mx-auto mt-8 max-w-3xl sm:mt-12">
           <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="flex items-center gap-3 border-b border-slate-100 bg-slate-50 px-6 py-4">
               <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-medical-blue/10 text-medical-blue">

@@ -9,6 +9,13 @@
   --medical-teal: #0d9488;
   --medical-teal-dark: #0b7a70;
   --medical-teal-light: #e6f7f5;
+  --header-height: 88px;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --header-height: 104px;
+  }
 }
 
 @theme inline {
@@ -21,10 +28,17 @@
   --color-medical-teal-dark: var(--medical-teal-dark);
   --color-medical-teal-light: var(--medical-teal-light);
   --font-sans: var(--font-inter);
+  --font-baloo: var(--font-baloo);
+  --font-cinzel: var(--font-cinzel);
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+section[id] {
+  scroll-margin-top: var(--header-height);
 }
 
 body {
@@ -35,4 +49,17 @@ body {
 
 ::selection {
   background: color-mix(in srgb, var(--medical-teal) 25%, white);
+}
+
+.logo-img,
+.logo-link,
+.logo-wrapper {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.logo-img {
+  object-fit: contain;
 }

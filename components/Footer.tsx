@@ -5,8 +5,8 @@ export function Footer() {
 
   return (
     <footer className="border-t border-slate-200 bg-slate-900 text-slate-300">
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-10 md:grid-cols-3">
+      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <div className="grid gap-8 sm:gap-10 md:grid-cols-3">
           <div>
             <p className="text-lg font-bold text-white">{siteConfig.name}</p>
             <p className="mt-3 text-sm leading-relaxed text-slate-400">
@@ -45,7 +45,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-slate-800 pt-8 sm:flex-row">
+        <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-slate-800 pt-6 sm:mt-10 sm:flex-row sm:pt-8">
           <p className="text-sm text-slate-500">
             © {year} {siteConfig.name}. All rights reserved.
           </p>

@@ -1,93 +1,106 @@
+import {
+  Activity,
+  Apple,
+  ArrowRight,
+  Baby,
+  BadgeCheck,
+  BarChart3,
+  Calendar,
+  CalendarCheck,
+  Check,
+  ChevronDown,
+  ChevronLeft,
+  ChevronRight,
+  Clock,
+  Ear,
+  Footprints,
+  GraduationCap,
+  Grid2x2,
+  Heart,
+  Home,
+  Leaf,
+  Lightbulb,
+  Mail,
+  MapPin,
+  Menu,
+  Milk,
+  PawPrint,
+  Phone,
+  PersonStanding,
+  Plane,
+  Plus,
+  Quote,
+  Ruler,
+  ShieldCheck,
+  Smile,
+  Soup,
+  Sparkles,
+  SprayCan,
+  Sprout,
+  Star,
+  Stethoscope,
+  Syringe,
+  User,
+  Users,
+  Weight,
+  Wind,
+  X,
+  HelpCircle,
+} from "lucide-react";
+
 type IconProps = {
   className?: string;
 };
 
 export function StethoscopeIcon({ className }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.5a7.5 7.5 0 0 1 15 0v2.5a2.5 2.5 0 0 1-5 0v-2.5M9 3v3.5M15 3v3.5M12 18v3" />
-    </svg>
-  );
+  return <Stethoscope className={className} />;
 }
 
 export function SyringeIcon({ className }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" d="m14 4 6 6M9.5 8.5 4 14v4h4l5.5-5.5M14 4l-2 2M9.5 8.5 14 4" />
-    </svg>
-  );
+  return <Syringe className={className} />;
 }
 
 export function ChartIcon({ className }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M4 19V5M4 19h16M8 15V9M12 15V7M16 15v-3" />
-    </svg>
-  );
+  return <BarChart3 className={className} />;
 }
 
 export function BabyIcon({ className }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-      <circle cx="12" cy="8" r="4" />
-      <path strokeLinecap="round" strokeLinejoin="round" d="M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6" />
-    </svg>
-  );
+  return <Baby className={className} />;
+}
+
+export function FootprintsIcon({ className }: IconProps) {
+  return <Footprints className={className} />;
+}
+
+export function WalkingChildIcon({ className }: IconProps) {
+  return <PersonStanding className={className} />;
 }
 
 export function NutritionIcon({ className }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 3c-2 4-6 5-6 10a6 6 0 0 0 12 0c0-5-4-6-6-10Z" />
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 13v8" />
-    </svg>
-  );
+  return <Sprout className={className} />;
 }
 
 export function LungsIcon({ className }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v6M8 10c-2 1-3 3-3 6 0 3 2 5 4 5h6c2 0 4-2 4-5 0-3-1-5-3-6" />
-    </svg>
-  );
+  return <Wind className={className} />;
 }
 
 export function NebuliserIcon({ className }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M8 18h8M10 14h4M12 6v8M7 10h2M15 10h2" />
-      <path strokeLinecap="round" strokeLinejoin="round" d="M5 18h14a2 2 0 0 0 2-2v-1" />
-    </svg>
-  );
+  return <SprayCan className={className} />;
 }
 
 export function EntIcon({ className }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M8 8c0-2 1.5-4 4-4s4 2 4 4c0 2-1 3-2 4l-1 8M12 20v-2" />
-    </svg>
-  );
+  return <Ear className={className} />;
 }
 
 export function SkinIcon({ className }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-      <circle cx="8" cy="8" r="1.5" fill="currentColor" />
-      <circle cx="16" cy="10" r="1.5" fill="currentColor" />
-      <circle cx="11" cy="15" r="1.5" fill="currentColor" />
-      <path strokeLinecap="round" strokeLinejoin="round" d="M6 4c2 2 4 2 6 0s4-2 6 0" />
-    </svg>
-  );
+  return <Sparkles className={className} />;
 }
 
 export function PhoneIcon({ className }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z" />
-    </svg>
-  );
+  return <Phone className={className} />;
 }
 
+/** Brand logo — not available in lucide-react, kept as a custom mark. */
 export function WhatsAppIcon({ className }: IconProps) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -96,55 +109,155 @@ export function WhatsAppIcon({ className }: IconProps) {
   );
 }
 
-export function MapPinIcon({ className }: IconProps) {
+/** Brand logo — not available in lucide-react, kept as a custom mark. */
+export function InstagramIcon({ className }: IconProps) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z" />
-      <circle cx="12" cy="10" r="2.5" />
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
     </svg>
   );
+}
+
+export function MapPinIcon({ className }: IconProps) {
+  return <MapPin className={className} />;
 }
 
 export function MailIcon({ className }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-      <rect x="3" y="5" width="18" height="14" rx="2" />
-      <path strokeLinecap="round" strokeLinejoin="round" d="m3 7 9 6 9-6" />
-    </svg>
-  );
+  return <Mail className={className} />;
 }
 
 export function ClockIcon({ className }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-      <circle cx="12" cy="12" r="9" />
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 7v5l3 2" />
-    </svg>
-  );
+  return <Clock className={className} />;
+}
+
+export function ChevronDownIcon({ className }: IconProps) {
+  return <ChevronDown className={className} />;
+}
+
+export function ChevronLeftIcon({ className }: IconProps) {
+  return <ChevronLeft className={className} />;
+}
+
+export function ChevronRightIcon({ className }: IconProps) {
+  return <ChevronRight className={className} />;
+}
+
+export function GraduationCapIcon({ className }: IconProps) {
+  return <GraduationCap className={className} />;
 }
 
 export function CheckIcon({ className }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" d="m5 13 4 4L19 7" />
-    </svg>
-  );
+  return <Check className={className} />;
+}
+
+export function HomeIcon({ className }: IconProps) {
+  return <Home className={className} />;
+}
+
+export function GridIcon({ className }: IconProps) {
+  return <Grid2x2 className={className} />;
+}
+
+export function StarIcon({ className }: IconProps) {
+  return <Star className={className} />;
+}
+
+export function QuestionIcon({ className }: IconProps) {
+  return <HelpCircle className={className} />;
+}
+
+export function CalendarIcon({ className }: IconProps) {
+  return <Calendar className={className} />;
 }
 
 export function MenuIcon({ className }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-      <path strokeLinecap="round" d="M4 7h16M4 12h16M4 17h16" />
-    </svg>
-  );
+  return <Menu className={className} />;
 }
 
 export function CloseIcon({ className }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-      <path strokeLinecap="round" d="M6 6l12 12M18 6 6 18" />
-    </svg>
-  );
+  return <X className={className} />;
+}
+
+export function SmileIcon({ className }: IconProps) {
+  return <Smile className={className} />;
+}
+
+export function MilkIcon({ className }: IconProps) {
+  return <Milk className={className} />;
+}
+
+export function SoupIcon({ className }: IconProps) {
+  return <Soup className={className} />;
+}
+
+export function AppleIcon({ className }: IconProps) {
+  return <Apple className={className} />;
+}
+
+export function LeafIcon({ className }: IconProps) {
+  return <Leaf className={className} />;
+}
+
+export function LightbulbIcon({ className }: IconProps) {
+  return <Lightbulb className={className} />;
+}
+
+export function CalendarCheckIcon({ className }: IconProps) {
+  return <CalendarCheck className={className} />;
+}
+
+export function HeartIcon({ className }: IconProps) {
+  return <Heart className={className} />;
+}
+
+export function PlaneIcon({ className }: IconProps) {
+  return <Plane className={className} />;
+}
+
+export function ArrowRightIcon({ className }: IconProps) {
+  return <ArrowRight className={className} />;
+}
+
+export function BadgeCheckIcon({ className }: IconProps) {
+  return <BadgeCheck className={className} />;
+}
+
+export function PawPrintIcon({ className }: IconProps) {
+  return <PawPrint className={className} />;
+}
+
+export function PlusIcon({ className }: IconProps) {
+  return <Plus className={className} />;
+}
+
+export function QuoteIcon({ className }: IconProps) {
+  return <Quote className={className} />;
+}
+
+export function ShieldCheckIcon({ className }: IconProps) {
+  return <ShieldCheck className={className} />;
+}
+
+export function UserIcon({ className }: IconProps) {
+  return <User className={className} />;
+}
+
+export function UsersIcon({ className }: IconProps) {
+  return <Users className={className} />;
+}
+
+export function ActivityIcon({ className }: IconProps) {
+  return <Activity className={className} />;
+}
+
+export function RulerIcon({ className }: IconProps) {
+  return <Ruler className={className} />;
+}
+
+export function WeightIcon({ className }: IconProps) {
+  return <Weight className={className} />;
 }
 
 const serviceIconMap = {
@@ -167,5 +280,27 @@ export function ServiceIcon({
   className?: string;
 }) {
   const Icon = serviceIconMap[name];
+  return <Icon className={className} />;
+}
+
+const journeyIconMap = {
+  smile: SmileIcon,
+  footprints: FootprintsIcon,
+  walking: WalkingChildIcon,
+  graduation: GraduationCapIcon,
+  milk: MilkIcon,
+  bowl: SoupIcon,
+  apple: AppleIcon,
+  leaf: LeafIcon,
+} as const;
+
+export function JourneyIcon({
+  name,
+  className,
+}: {
+  name: keyof typeof journeyIconMap;
+  className?: string;
+}) {
+  const Icon = journeyIconMap[name];
   return <Icon className={className} />;
 }

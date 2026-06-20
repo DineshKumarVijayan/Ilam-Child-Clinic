@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Baloo_2, Cinzel } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/lib/site-config";
 
@@ -7,6 +7,20 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
+});
+
+const baloo2 = Baloo_2({
+  subsets: ["latin"],
+  variable: "--font-baloo",
+  display: "swap",
+  weight: ["600", "700"],
+});
+
+const cinzel = Cinzel({
+  subsets: ["latin"],
+  variable: "--font-cinzel",
+  display: "swap",
+  weight: ["500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -58,7 +72,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full scroll-smooth antialiased`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${baloo2.variable} ${cinzel.variable} h-full scroll-smooth antialiased`}
+    >
       <body className="min-h-full bg-white text-slate-900">{children}</body>
     </html>
   );

@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
 export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="bg-medical-blue-light/40 py-16 sm:py-20">
+    <section id="faq" className="bg-medical-blue-light/40 py-10 sm:py-20">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-sm font-semibold uppercase tracking-wide text-medical-teal">
@@ -21,7 +22,7 @@ export function FAQ() {
           </p>
         </div>
 
-        <div className="mt-10 space-y-3">
+        <div className="mt-6 space-y-3 sm:mt-10">
           {siteConfig.faqs.map((faq, index) => {
             const isOpen = openIndex === index;
 
@@ -45,15 +46,7 @@ export function FAQ() {
                     }`}
                     aria-hidden="true"
                   >
-                    <svg
-                      className="h-4 w-4"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path d="M5 8l5 5 5-5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
+                    <ChevronDown className="h-4 w-4" />
                   </span>
                 </button>
 
