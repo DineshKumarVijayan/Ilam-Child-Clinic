@@ -1,4 +1,5 @@
-import { siteConfig, getWhatsAppUrl } from "@/lib/site-config";
+import { siteConfig, getWhatsAppUrl, getPhoneUrl } from "@/lib/site-config";
+import { MailIcon, MapPinIcon, PhoneIcon } from "@/components/icons";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -36,11 +37,33 @@ export function Footer() {
             <p className="text-sm font-semibold uppercase tracking-wide text-white">
               Contact
             </p>
-            <ul className="mt-4 space-y-2 text-sm text-slate-400">
-              <li>{siteConfig.phoneDisplay}</li>
-              <li>{siteConfig.email}</li>
-              <li>{siteConfig.address.line1}</li>
-              <li>{siteConfig.address.line2}</li>
+            <ul className="mt-4 space-y-3 text-sm text-slate-400">
+              <li>
+                <a
+                  href={getPhoneUrl()}
+                  className="flex items-start gap-2.5 transition hover:text-medical-teal-light"
+                >
+                  <PhoneIcon className="mt-0.5 h-4 w-4 shrink-0 text-medical-teal-light" />
+                  {siteConfig.phoneDisplay}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`mailto:${siteConfig.email}`}
+                  className="flex items-start gap-2.5 transition hover:text-medical-teal-light"
+                >
+                  <MailIcon className="mt-0.5 h-4 w-4 shrink-0 text-medical-teal-light" />
+                  {siteConfig.email}
+                </a>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <MapPinIcon className="mt-0.5 h-4 w-4 shrink-0 text-medical-teal-light" />
+                <span>
+                  {siteConfig.address.line1}
+                  <br />
+                  {siteConfig.address.line2}
+                </span>
+              </li>
             </ul>
           </div>
         </div>

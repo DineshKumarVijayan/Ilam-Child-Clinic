@@ -52,25 +52,25 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-md will-change-transform">
       <div className="mx-auto flex max-w-[1480px] items-center gap-3 px-4 py-3 sm:px-6 lg:px-8">
-        <Link href="#home" className="logo-link group flex items-center gap-3">
+        <Link href="#home" className="logo-link group flex items-center gap-2 sm:gap-3">
           <Image
             src={siteConfig.logo}
             alt={`${siteConfig.shortName} logo`}
             width={213}
             height={128}
-            className="logo-img block h-16 w-auto shrink-0 sm:h-20"
+            className="logo-img block h-12 w-auto shrink-0 min-[420px]:h-16 sm:h-20"
             priority
           />
-          <div className="hidden min-[420px]:block">
+          <div>
             {/* Compact stacked lockup — used while the nav needs the room (below 2xl). */}
             <div className="2xl:hidden">
-              <p className="font-baloo text-xl font-bold leading-none tracking-tight text-medical-teal sm:text-2xl">
+              <p className="font-baloo text-lg font-bold leading-none tracking-tight text-medical-teal min-[420px]:text-xl sm:text-2xl">
                 ILAM
               </p>
-              <p className="mt-0.5 max-w-[170px] font-cinzel text-[11px] font-semibold leading-tight tracking-wide text-slate-900 sm:text-xs">
+              <p className="mt-0.5 max-w-[150px] font-cinzel text-[10px] font-semibold leading-tight tracking-wide text-slate-900 min-[420px]:max-w-[170px] min-[420px]:text-[11px] sm:text-xs">
                 Child Clinic &amp; Vaccination Centre
               </p>
-              <p className="mt-0.5 text-[11px] text-slate-500 sm:text-xs">
+              <p className="mt-0.5 text-[10px] text-slate-500 min-[420px]:text-[11px] sm:text-xs">
                 Vanagaram, Chennai
               </p>
             </div>
