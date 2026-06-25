@@ -101,11 +101,11 @@ export function GoogleReviews() {
         </div>
 
         {/* review cards */}
-        <div className="mt-8 grid gap-6 sm:mt-12 md:grid-cols-3">
+        <div className="mt-8 flex gap-4 overflow-x-auto pb-2 -mx-4 px-4 snap-x snap-mandatory [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:mt-12 sm:mx-0 sm:px-0 sm:pb-0 sm:grid sm:gap-6 sm:overflow-visible sm:snap-none md:grid-cols-3">
           {reviews.map((review, index) => (
             <article
               key={review.name}
-              className="relative flex h-full flex-col overflow-hidden rounded-3xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              className="relative flex h-full w-[78%] shrink-0 snap-center flex-col overflow-hidden rounded-3xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg sm:w-auto sm:shrink"
             >
               <span
                 className={`pointer-events-none absolute -left-6 -top-6 h-24 w-24 rounded-full ${cardAccentMap[index % cardAccentMap.length]}`}
@@ -135,6 +135,9 @@ export function GoogleReviews() {
             </article>
           ))}
         </div>
+        <p className="mt-3 text-center text-xs text-slate-400 sm:hidden">
+          Swipe to read more reviews →
+        </p>
 
         {/* stats strip */}
         <div className="mt-10 grid grid-cols-2 gap-6 rounded-3xl border border-slate-100 bg-white p-6 shadow-sm sm:p-8 lg:grid-cols-4 lg:divide-x lg:divide-slate-100">

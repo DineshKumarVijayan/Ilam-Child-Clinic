@@ -52,7 +52,7 @@ export function HeroImageCarousel() {
         </div>
 
         <div
-          className="relative"
+          className="relative -mx-4 sm:mx-0"
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
           onTouchStart={(event) => {
@@ -65,7 +65,7 @@ export function HeroImageCarousel() {
             touchStartX.current = null;
           }}
         >
-          <div className="relative h-[220px] overflow-hidden sm:h-[380px] lg:h-[480px]">
+          <div className="relative h-[300px] overflow-hidden sm:h-[380px] lg:h-[480px]">
             {images.map((image, imageIndex) => {
               const diff = offsetOf(imageIndex);
               const isCenter = diff === 0;
@@ -113,7 +113,7 @@ export function HeroImageCarousel() {
                 type="button"
                 aria-label="Previous slide"
                 onClick={() => goTo(index - 1)}
-                className="absolute left-0 top-1/2 z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white/90 text-slate-700 shadow-lg backdrop-blur transition hover:bg-white hover:text-medical-blue sm:h-12 sm:w-12 lg:-left-2"
+                className="absolute left-0 top-1/2 z-30 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white/90 text-slate-700 shadow-lg backdrop-blur transition hover:bg-white hover:text-medical-blue sm:flex sm:h-12 sm:w-12 lg:-left-2"
               >
                 <ChevronLeftIcon className="h-5 w-5 sm:h-6 sm:w-6" />
               </button>
@@ -121,7 +121,7 @@ export function HeroImageCarousel() {
                 type="button"
                 aria-label="Next slide"
                 onClick={() => goTo(index + 1)}
-                className="absolute right-0 top-1/2 z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white/90 text-slate-700 shadow-lg backdrop-blur transition hover:bg-white hover:text-medical-blue sm:h-12 sm:w-12 lg:-right-2"
+                className="absolute right-0 top-1/2 z-30 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white/90 text-slate-700 shadow-lg backdrop-blur transition hover:bg-white hover:text-medical-blue sm:flex sm:h-12 sm:w-12 lg:-right-2"
               >
                 <ChevronRightIcon className="h-5 w-5 sm:h-6 sm:w-6" />
               </button>
@@ -145,6 +145,9 @@ export function HeroImageCarousel() {
             ))}
           </div>
         </div>
+        <p className="mt-3 text-center text-xs text-slate-400 sm:hidden">
+          Swipe to see more tips →
+        </p>
       </div>
     </section>
   );

@@ -12,13 +12,13 @@ export function Services() {
           description="From newborn care and vaccination to growth tracking, nutrition counselling, and management of childhood asthma, allergies, and infections — comprehensive pediatric care under one trusted roof."
         />
 
-        <div className="mt-8 grid gap-6 sm:mt-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="mt-8 flex gap-4 overflow-x-auto pb-2 -mx-4 px-4 snap-x snap-mandatory [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:mt-12 sm:mx-0 sm:px-0 sm:pb-0 sm:grid sm:gap-6 sm:overflow-visible sm:snap-none sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {siteConfig.services.map((service, index) => {
             const isBlue = index % 2 === 0;
             return (
               <article
                 key={service.title}
-                className={`group relative overflow-hidden rounded-3xl border p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg ${
+                className={`group relative w-[78%] shrink-0 snap-center overflow-hidden rounded-3xl border p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg sm:w-auto sm:shrink ${
                   isBlue
                     ? "border-medical-blue/15 bg-gradient-to-br from-medical-blue-light via-white to-white hover:border-medical-blue/30 hover:shadow-medical-blue/10"
                     : "border-medical-teal/15 bg-gradient-to-br from-medical-teal-light via-white to-white hover:border-medical-teal/30 hover:shadow-medical-teal/10"
@@ -52,6 +52,9 @@ export function Services() {
             );
           })}
         </div>
+        <p className="mt-3 text-center text-xs text-slate-400 sm:hidden">
+          Swipe to see all services →
+        </p>
       </div>
     </section>
   );

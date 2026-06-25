@@ -80,13 +80,13 @@ export function GrowthJourney() {
         </div>
 
         {/* stage cards */}
-        <div className="relative mt-6 grid gap-6 sm:grid-cols-2 lg:mt-0 lg:grid-cols-4">
+        <div className="relative mt-6 flex gap-4 overflow-x-auto pb-2 -mx-4 px-4 snap-x snap-mandatory [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:mx-0 sm:px-0 sm:pb-0 sm:grid sm:gap-6 sm:overflow-visible sm:snap-none sm:grid-cols-2 lg:mt-0 lg:grid-cols-4">
           {stages.map((stage, index) => {
             const isBlue = index % 2 === 0;
             return (
               <div
                 key={stage.age}
-                className="flex flex-col rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-100"
+                className="flex w-[78%] shrink-0 snap-center flex-col rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-100 sm:w-auto sm:shrink"
               >
                 {/* mobile-only number badge */}
                 <span
@@ -163,6 +163,9 @@ export function GrowthJourney() {
             );
           })}
         </div>
+        <p className="mt-3 text-center text-xs text-slate-400 sm:hidden">
+          Swipe to see every stage →
+        </p>
 
         {/* bottom banner */}
         <div className="mt-10 flex flex-col gap-6 rounded-3xl bg-medical-teal-light/50 p-6 sm:p-8 lg:flex-row lg:items-center lg:justify-between lg:divide-x lg:divide-medical-teal/15">

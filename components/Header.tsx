@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, type ComponentType } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { siteConfig, getWhatsAppUrl } from "@/lib/site-config";
+import { siteConfig, getPhoneUrl } from "@/lib/site-config";
 import {
   ActivityIcon,
   CalendarIcon,
@@ -148,9 +148,7 @@ export function Header() {
 
         <div className="ml-auto hidden shrink-0 xl:block">
           <a
-            href={getWhatsAppUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={getPhoneUrl()}
             className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full bg-medical-teal px-3.5 py-2 text-sm font-semibold text-white shadow-sm shadow-medical-teal/20 transition hover:bg-medical-teal-dark"
           >
             <CalendarIcon className="h-3.5 w-3.5" />
@@ -212,9 +210,7 @@ export function Header() {
             ))}
 
             <a
-              href={getWhatsAppUrl()}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={getPhoneUrl()}
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-medical-teal px-5 py-3 text-sm font-semibold text-white"
               onClick={() => setMobileOpen(false)}
             >
